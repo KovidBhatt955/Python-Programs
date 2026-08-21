@@ -1,0 +1,43 @@
+# Import necessary packages
+from abc import ABC, abstractmethod
+# Create a base class
+class Animal(ABC):
+
+    # Abstract method
+    # Should be implemented by all sub-classes
+    def move(self):
+        pass
+
+# Sub classes
+class Human(Animal):
+
+    def move(self):
+        print("I am a human and I can walk and runnnnnnnnnn.")
+
+class Snake(Animal):
+
+    def move(self):
+        print("Hisssss I can crawl.")
+
+class Dog(Animal):
+
+    def move(self):
+        print("Barkidy bark bark I can bark")
+
+class Lion(Animal):
+
+    def move(self):
+        print("Roarington I can roar")
+
+# Driver code
+R = Human()
+R.move()
+
+K = Snake()
+K.move()
+
+R = Dog()
+R.move()
+
+K = Lion()
+K.move()
